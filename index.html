@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>etch-a-sketch</title>
+  <link rel='stylesheet' href='style.css' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <h1>etch - a - sketch !</h1>
+    <button onclick='reset()'>Reset</button>
+    <button onclick='changeGridSize()'>Change Grid Size</button>
+    <button onclick='continuous()'>Continuous</button>
+  </header>
+
+  <div id='canvas-and-palette'>
+    <div id='container'></div>
+    <div id='palette'>
+      <button class='color-choice' id='black' onclick='changeColorToBlack()'></button>
+      <button class='color-choice' id='gray'></button>
+      <button class='color-choice' id='white'></button>
+      <button class='color-choice' id='red'></button>
+      <button class='color-choice' id='blue'></button>
+      <button class='color-choice' id='yellow'></button>
+      <button class='color-choice' id='random'></button>
+    </div>
+
+  </div>
+</body>
+
+<script src='main.js'></script>
+</html>

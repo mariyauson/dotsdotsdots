@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(68, 97, 82);
+    width: 100%;
+  }
+  
+  header {
+    width: 100%;
+    margin: 3px auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: rgb(247, 236, 170);
+    
+  }
+  h1, header button {
+    font-family: 'comic sans ms'; 
+    letter-spacing: 1px;
+  }
+  header button {
+    display: inline-block;
+    margin: auto auto 3px auto;
+    border: 5px ridge #865735;
+    background: rgb(175, 147, 177);
+  }
+  header button:hover {
+    background: rgb(250, 241, 191);
+  }
+  
+  #container {
+    display: grid;
+    width: 450px;
+    height: 450px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 2px 2px;
+    border: 14px ridge #865735;
+    background-color: black;
+    margin: auto auto;
+  }
+  .parallelograms {
+    background-color: #eee;
+  }
+  .parallelograms:hover{
+    border: black 1px solid;
+  }
+  
+  #palette {
+    display: flex;
+    flex-direction: row;
+    margin: 3px auto;
+    width: 340px;
+  }
+  .color-choice {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px 10px;
+    border: #865735 ridge 5px;
+    margin: 3px;
+  }
+  
+  .color-choice:hover{
+    transform: scale(1.1);
+  }
+  
+  #black {
+    background-color: black;
+  }
+  #gray {
+    background-color: gray;
+  }
+  #white {
+    background-color: white;
+  }
+  #red {
+    background-color: red;
+  }
+  #blue {
+    background-color: blue;
+  }
+  #yellow {
+    background-color: yellow;
+  }
+  #random {
+    background-image: linear-gradient(red,orange,yellow,green,blue,violet);
+  }
+  
+  .reset {
+    background-color: white;
+  }
